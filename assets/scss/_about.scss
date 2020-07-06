@@ -1,0 +1,17 @@
+.about {
+    &-icon {
+        width: 75px;
+        height: 75px;
+        background-image: url("../images/rocket.png");
+        background-size: cover;
+    }
+}
+
+@media (min-width: $desktop) {
+    .about {
+        &-icon {
+            width: 20vh;
+            height: 20vh;
+        }
+    }
+}

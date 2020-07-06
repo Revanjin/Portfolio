@@ -1,0 +1,24 @@
+.bmlmodal {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    background-color: #222222;
+    transition: transform 3s ease;
+    z-index: 11;
+    &__headline {
+        color: #eee;
+    }
+    &__link {
+        color: yellow;
+        padding-left: $spacing-sm;
+        &:hover {
+            transition: all 0.5s ease;
+            color: #aaaa33;
+            text-decoration: underline;
+        }
+    }
+}

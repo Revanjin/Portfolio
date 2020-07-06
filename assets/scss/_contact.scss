@@ -1,0 +1,52 @@
+.contact {
+    &-shake {
+        animation: 3s shake infinite alternate;
+    }
+    &-icon {
+        width: 75px;
+        height: 75px;
+        background-image: url("../images/info.png");
+        background-size: cover;
+    }
+    &-social-media {
+        font-size: $font-md;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: $desktop) {
+    .contact {
+        &-icon {
+            width: 20vh;
+            height: 20vh;
+        }
+    }
+}
+
+/*Animation Shake*/
+@keyframes shake {
+    0% {
+        transform: skewX(-3deg);
+    }
+    10% {
+        transform: skewX(-3deg);
+    }
+    11% {
+        transform: skewX(3deg);
+    }
+    12% {
+        transform: skewX(-3deg);
+    }
+    13% {
+        transform: skewX(3deg);
+    }
+    14% {
+        transform: skewX(-3deg);
+    }
+    15% {
+        transform: skewX(0);
+    }
+    100% {
+        transform: skewX(0);
+    }
+}

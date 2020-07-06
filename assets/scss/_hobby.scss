@@ -1,0 +1,26 @@
+.hobby {
+    &-icon {
+        width: 75px;
+        height: 75px;
+        background-image: url("../images/dog.png");
+        background-size: cover;
+    }
+    
+    &-link {
+        color: inherit;
+        text-decoration: underline;
+        transition: all 0.5s ease;
+        &:hover {
+            color: #eee;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .hobby {
+        &-icon {
+            width: 20vh;
+            height: 20vh;
+        }
+    }
+}

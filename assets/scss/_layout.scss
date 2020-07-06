@@ -1,0 +1,41 @@
+.base-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.base-container--reverse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+@media (min-width: $desktop) {
+    .base-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        width: calc(100% - 240px);
+        padding-left: $spacing-md;
+    }
+    .base-container--reverse {
+        flex-direction: row;
+        justify-content: start;
+        width: calc(100% - 120px);
+        padding-left: $spacing-lg;
+        padding-right: $spacing-lg;
+        margin-left: 120px;
+    }
+}
+
+@media (min-width: $desktop-lg) {
+    .base-container--reverse {
+        width: calc(100% - 240px);
+        margin-left: 240px;
+    }
+}
